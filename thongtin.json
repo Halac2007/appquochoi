@@ -1,0 +1,74 @@
+[
+    {
+        "hoten": "Ông Nguyễn Phú Trọng",
+        "chucvu": "Tổng Bí Thư",
+        "anh": "https://prof-imgs.vgcloud.vn/Images/v-profile/2021/01/19/10/20210119101954-unnamed-(1).jpg",
+        "thongtincanhan": {
+            "ngaysinh": "14/04/1944",
+            "quequan": "Xã Đông Hội, Huyện Đông Anh, Hà Nội",
+            "hocvi": "Giáo sư, Tiến sĩ Chính trị học (chuyên ngành Xây dựng Đảng), Cử nhân Ngữ văn"
+        },
+        "quatrinhcongtac":[
+            {
+                "thoigian": "1957 - 1963",
+                "noicongtac": "Học trường phổ thông cấp II, cấp III Nguyễn Gia Thiều, Gia Lâm, Hà Nội"   
+            },
+            {
+                "thoigian": "1963 - 1967",
+                "noicongtac": "Sinh viên khoa Ngữ văn trường Đại học Tổng hợp Hà Nội"   
+            },
+            {
+                "thoigian": "12/1967 - 7/1968",               
+                "noicongtac": "Làm việc tại Phòng Tư liệu Tạp chí Học tập (nay là Tạp chí Cộng sản)"   
+            }
+        ]
+    },
+    {
+        "hoten": "Ông Võ Văn Thưởng",
+        "chucvu": "Chủ Tịch Nước",
+        "anh": "https://static-images.vnncdn.net/images/2023/3/20/00003I/anh-thumb-vo-van-thuong.jpg",
+        "thongtincanhan": {
+            "ngaysinh": "13/12/1970",
+            "quequan": "Xã An Phước, Huyện Mang Thít, Vĩnh Long",
+            "hocvi": "Thạc sĩ Khoa học xã hội và nhân văn, Cử nhân Triết học"
+        },
+        "quatrinhcongtac":[
+            {
+                "thoigian": "1992",
+                "noicongtac": "Sinh viên ngành triết học tại Trường Đại học Tổng hợp Thành phố Hồ Chí Minh, Phó Bí thư Đoàn trường"   
+            },
+            {
+                "thoigian": "1993", 
+                "noicongtac": "Phó ban Đại học chuyên nghiệp Thành Đoàn Thành phố Hồ Chí Minh rồi làm Trưởng ban"   
+            },
+            {
+                "thoigian": "1995",               
+                "noicongtac": "Phó Chủ tịch kiêm Tổng Thư ký Hội Sinh viên Thành phố Hồ Chí Minh"   
+            }
+        ]
+    },
+    {
+        "hoten": "Ông Phạm Minh Chính",
+        "chucvu": "Thủ Tướng Chính Phủ",
+        "anh": "https://prof-imgs.vgcloud.vn/Images/v-profile/2021/01/31/19/20210131192810-ttxvn_pham_minh_chinh-(1).jpg",
+        "thongtincanhan": {
+            "ngaysinh": "10/12/1958",
+            "quequan": "Xã Hoa Lộc, Huyện Hậu Lộc, Thanh Hóa",
+            "hocvi": "Phó Giáo sư ngành Khoa học An ninh, Tiến sĩ Luật, Cử nhân Xây dựng dân dụng và công nghiệp, Cử nhân Luật"
+        },
+        "quatrinhcongtac":[
+            {
+                "thoigian": "9/1977 - 9/1984",
+                "noicongtac": "Học Đại học Ngoại ngữ Hà Nội; Đại học Xây dựng Bucarest-Rumani, Khoa Xây dựng dân dụng-công nghiệp, chuyên ngành kết cấu thép"   
+            },
+            {
+                "thoigian": "8/1982 - 9/1984", 
+                "noicongtac": "Được bầu làm Bí thư Ban Chấp hành Đoàn Thanh niên Cộng sản Hồ Chí Minh toàn Rumani và Chủ tịch Hội Sinh viên Việt Nam tại nước Cộng hòa Rumani"   
+            },
+            {
+                "thoigian": "9/1984 - 1/1985",               
+                "noicongtac": "Tốt nghiệp đại học, chờ tiếp nhận công tác"   
+            }
+        ]
+    }
+]

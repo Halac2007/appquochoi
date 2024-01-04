@@ -1,0 +1,74 @@
+<!-- hoso.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file if needed -->
+    <title>Hồ Sơ Cá Nhân</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Content will be dynamically added here using JavaScript -->
+                <div id="profile-content" class="box-profile-details-container">
+                    <div class="box-profile-details">
+                        <div class="profile-image-container">
+                            <img src="" alt="Profile Image" class="profile-image">
+                        </div>
+                        <h2 class="profile-name"></h2>
+                        <p><strong>Chức vụ:</strong> <span class="profile-position"></span></p>
+                        <p><strong>Ngày sinh:</strong> <span class="profile-birthdate"></span></p>
+                        <p><strong>Quê quán:</strong> <span class="profile-hometown"></span></p>
+                        <p><strong>Học vị:</strong> <span class="profile-education"></span></p>
+                        <h3>Quá trình công tác:</h3>
+                        <ul class="profile-work-history"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Fetch data from thongtin.json
+            fetch('thongtin.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Get profile parameters from URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const hoten = urlParams.get("hoten");
+                    const chucvu = urlParams.get("chucvu");
+
+                    // Find the profile in the loaded data
+                    const profile = data.find(item => item.hoten === hoten && item.chucvu === chucvu);
+
+                    if (profile) {
+                        const profileContent = document.querySelector(".box-profile-details-container .box-profile-details");
+                        profileContent.querySelector(".profile-image").src = profile.anh;
+                        profileContent.querySelector(".profile-name").textContent = profile.hoten;
+                        profileContent.querySelector(".profile-position").textContent = profile.chucvu;
+                        profileContent.querySelector(".profile-birthdate").textContent = profile.thongtincanhan.ngaysinh;
+                        profileContent.querySelector(".profile-hometown").textContent = profile.thongtincanhan.quequan;
+                        profileContent.querySelector(".profile-education").textContent = profile.thongtincanhan.hocvi;
+
+                        const workHistoryList = profileContent.querySelector(".profile-work-history");
+                        profile.quatrinhcongtac.forEach(item => {
+
+                           
+                            const listItem = document.createElement("li");
+                            listItem.textContent = `${item.thoigian} - ${item.noicongtac}`;
+                            workHistoryList.appendChild(listItem);
+                        });
+                    } else {
+                        console.error("Profile not found in the data.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching JSON:', error);
+                });
+        });
+    </script>
+</body>
+</html>
